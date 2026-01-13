@@ -1,0 +1,138 @@
+
+
+   .layout {
+    display: flex;
+    height: 100vh;
+    background: radial-gradient(circle at top, #020617, #000);
+    color: white;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 260px;
+    background: #020617;
+    border-right: 1px solid #334155;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .new-chat {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .chat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 6px;
+  }
+  
+  .chat-item:hover,
+  .chat-item.active {
+    background: #1e293b;
+  }
+  
+  .chat-actions button {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+  
+  /* Chat Area */
+  .chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pdf-badge {
+    text-align: center;
+    padding: 6px;
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+  }
+  
+  /* Messages */
+  .messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .bubble {
+    max-width: 70%;
+    padding: 14px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .user {
+    background: #2563eb;
+    margin-left: auto;
+  }
+  
+  .bot {
+    background: #1e293b;
+  }
+  
+  /* Typing */
+  .typing {
+    color: #94a3b8;
+    font-style: italic;
+    animation: blink 1.4s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
+  
+  /* Input */
+  .input-bar {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #334155;
+  }
+  
+  .input-bar input,
+  .input-bar button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .input-bar input[type="file"] {
+    color: #94a3b8;
+  }
+  
+  .input-bar input[type="text"] {
+    flex: 1;
+    background: #020617;
+    color: white;
+    border: 1px solid #334155;
+  }
+  
+  .input-bar button {
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+  }
+  
